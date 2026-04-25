@@ -1,0 +1,23 @@
+# filename: backend/.gitignore
+
+.env
+__pycache__/
+board.db
+*.pyc
+.venv/
+
+
+
+
+
+
+# # Python-generated files
+# __pycache__/
+# *.py[oc]
+# build/
+# dist/
+# wheels/
+# *.egg-info
+
+# # Virtual environments
+# .venv
