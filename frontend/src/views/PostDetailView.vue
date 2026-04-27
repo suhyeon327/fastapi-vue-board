@@ -4,9 +4,16 @@ import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import api from '@/api'
 
+interface Post {
+  id: number
+  title: string
+  content: string
+  created_at: string
+}
+
 const route = useRoute()
 const router = useRouter()
-const post = ref(null)
+const post = ref<Post | null>(null)
 
 onMounted(async () => {
     try {
